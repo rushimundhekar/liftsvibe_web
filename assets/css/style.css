@@ -6,3 +6,396 @@
   font-variation-settings:
     "wdth" 100;
 }
+
+.navbar{
+  background-color: rgb(95, 95, 95);
+  text-decoration-color: blanchedalmond;
+  color: aliceblue;
+}
+.navbar-nav{
+  text-decoration: azure;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base navbar background */
+.navbar {
+  background-color: #5e5e5e !important;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar brand/logo style */
+.navbar-brand {
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  color: #f1f1f1 !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 10px 15px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover underline animation */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 5px;
+  left: 50%;
+  background-color: #ff6f00;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 70%;
+}
+
+/* On hover text color change */
+.navbar-nav .nav-link:hover {
+  color: #ff9800 !important;
+}
+
+/* Active link (if using active class) */
+.navbar-nav .nav-link.active {
+  color: #ffa726 !important;
+  font-weight: 600;
+}
+
+/* Responsive toggle button color */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+
+
+
+
+
+/* Style the logo image inside the navbar */
+.navbar-brand img {
+  height: 60px; /* Adjust as per your logo size */
+  transition: transform 0.4s ease, filter 0.4s ease;
+  animation: logoEntry 1.2s ease-in-out;
+}
+
+/* Logo entry animation on page load */
+@keyframes logoEntry {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Hover effect for logo image */
+.navbar-brand img:hover {
+  transform: scale(1.07);
+  filter: drop-shadow(0 0 10px rgba(255, 140, 0, 0.6));
+}
+
+
+
+
+
+
+/* General Hero Section Layout */
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #f9f9f9, #e7f1e4);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Text Area */
+.hero-text {
+  max-width: 600px;
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 3.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 900;
+}
+
+.hero-text h1 span.orange {
+  color: #e86e00;
+}
+
+.hero-text h1 span.green {
+  color: #4e7e36;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+/* Form Area */
+.hero-form {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-form input[type="text"] {
+  padding: 1rem;
+  border: 2px solid #d6e2d4;
+  border-radius: 8px;
+  font-size: 1rem;
+  min-width: 250px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: border 0.3s ease;
+}
+
+.hero-form input[type="text"]:focus {
+  border-color: #4e7e36;
+  outline: none;
+}
+
+/* CTA Button */
+.hero-form .cta-button {
+  padding: 1rem 1.5rem;
+  background-color: #e86e00;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.hero-form .cta-button:hover {
+  background-color: #cc5a00;
+  transform: scale(1.03);
+}
+
+/* Image Area */
+.hero-image {
+  flex: 1;
+  max-width: 500px;
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Floating Image Animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  30% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+
+                           /*About Section PAart Css*/
+
+
+  /* ===== Base Styling ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  color: #222;
+  background-color: #f9f9f9;
+}
+
+/* ===== Section Styling ===== */
+section {
+  padding: 80px 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ===== About Section ===== */
+#about {
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  color: #333;
+  border-top: 6px solid #2e7d32;
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.05);
+}
+
+#about h2 {
+  font-size: 36px;
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+#about p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ===== Services Section ===== */
+#services {
+  background: #ffffff;
+}
+
+#services h2 {
+  font-size: 34px;
+  color: #2196f3;
+  margin-bottom: 50px;
+}
+
+#services .row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#services .col-md-4 {
+  background: #f1f1f1;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  flex: 1 1 280px;
+  max-width: 350px;
+}
+
+#services .col-md-4:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+#services h4 {
+  font-size: 22px;
+  color: #2e7d32;
+  margin-bottom: 12px;
+}
+
+#services p {
+  font-size: 16px;
+  color: #444;
+}
+
+/* ===== Contact Section ===== */
+#contact {
+  background-color: #e8f5e9;
+  color: #333;
+  border-radius: 12px;
+}
+
+#contact h2 {
+  font-size: 32px;
+  color: #388e3c;
+  margin-bottom: 15px;
+}
+
+#contact p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+#contact a.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #2e7d32;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+#contact a.btn:hover {
+  background-color: #1b5e20;
+}
+
+/* ===== Email Button Styling ===== */
+.email-btn {
+  display: inline-block;
+  padding: 14px 35px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #6b7e73, #1bc2ac);
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0, 200, 83, 0.3);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.email-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(203, 255, 34, 0.573);
+  transform: skewX(-25deg);
+  transition: 0.5s;
+}
+
+.email-btn:hover::before {
+  left: 125%;
+}
+
+.email-btn:hover {
+  background: linear-gradient(135deg, #5e5f61, #e3c500);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}
+
+.email-btn:active {
+  animation: bounce 0.2s;
+}
+
+@keyframes bounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+
+
+
+
+
+
+
+
+
+
+

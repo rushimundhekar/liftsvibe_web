@@ -1,0 +1,104 @@
+/* === Section Container Styling === */
+.section-marathi {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+/* === Headings === */
+.section-marathi h2 {
+  font-size: 2.4rem;
+  color: #1c1c1c;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.section-marathi h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #e86e00;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -12px;
+  border-radius: 2px;
+}
+
+/* === Description Text === */
+.section-marathi p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  line-height: 1.8;
+}
+
+/* === Service Columns === */
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.service-box {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  padding: 30px 25px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.service-box h3 {
+  color: #2d2d2d;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* === Contact Button === */
+.contact-box {
+  background-color: #f3f4f6;
+  padding: 50px 20px;
+  border-radius: 12px;
+}
+
+.contact-box h3 {
+  font-size: 1.8rem;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.contact-box p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.contact-box .btn-email {
+  background-color: #e86e00;
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-box .btn-email:hover {
+  background-color: #cc5d00;
+}
