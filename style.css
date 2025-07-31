@@ -22,24 +22,70 @@ body {
   padding: 40px 60px;
 }
 
-/* प्रत्येक प्रोजेक्ट कार्ड */
-.portfolio-card {
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
 }
 
-.portfolio-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+.project-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
-.portfolio-card img {
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.image-scroll {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-scroll img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  transition: transform 4s ease-in-out;
 }
+
+.project-card:hover .image-scroll img {
+  transform: translateY(-60%);
+}
+
+.content {
+  padding: 1rem;
+  text-align: left;
+}
+
+.content h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.content p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+/* Optional different styles for each card */
+.project-card.style2 {
+  background: linear-gradient(to right, #ffe0b3, #fff7e6);
+}
+.project-card.style3 {
+  background: linear-gradient(to right, #e3f2fd, #f1f8ff);
+}
+.project-card.style4 {
+  background: linear-gradient(to right, #fbe9e7, #ffebee);
+}
+.project-card.style5 {
+  background: linear-gradient(to right, #e8f5e9, #f1f8e9);
+}
+
 
 
 
@@ -95,3 +141,11 @@ body {
   background-color: #e9ecef;
   margin: 0;
 }
+
+
+
+
+
+
+ 
+   

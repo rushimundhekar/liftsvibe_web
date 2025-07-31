@@ -121,66 +121,7 @@ html {
 
 
 
-/* General Hero Section Layout */
-.hero-section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 4rem 2rem;
-  background: linear-gradient(to right, #f9f9f9, #e7f1e4);
-  font-family: 'Poppins', sans-serif;
-}
 
-/* Text Area */
-.hero-text {
-  max-width: 600px;
-  flex: 1;
-}
-
-.hero-text h1 {
-  font-size: 3.2rem;
-  color: #333;
-  margin-bottom: 1rem;
-  font-weight: 900;
-}
-
-.hero-text h1 span.orange {
-  color: #e86e00;
-}
-
-.hero-text h1 span.green {
-  color: #4e7e36;
-}
-
-.hero-text p {
-  font-size: 1.2rem;
-  color: #444;
-  margin-bottom: 2rem;
-}
-
-/* Form Area */
-.hero-form {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.hero-form input[type="text"] {
-  padding: 1rem;
-  border: 2px solid #d6e2d4;
-  border-radius: 8px;
-  font-size: 1rem;
-  min-width: 250px;
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  transition: border 0.3s ease;
-}
-
-.hero-form input[type="text"]:focus {
-  border-color: #4e7e36;
-  outline: none;
-}
 
 /* CTA Button */
 .hero-form .cta-button {
@@ -383,19 +324,277 @@ section {
   animation: bounce 0.2s;
 }
 
-@keyframes bounce {
-  0% { transform: scale(1); }
-  50% { transform: scale(0.95); }
-  100% { transform: scale(1); }
+
+
+
+
+                              /*  Courosel Section Css All Slides */
+/* 
+first Slide -  */
+    .hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 20px;
+  background: #f8fcf9; /* सौम्य रंग */
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.green {
+  color: #3d8b3d;
+}
+.orange {
+  color: #f57c00;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.hero-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-form input[type="text"] {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.cta-button {
+  background-color: #f57c00;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.cta-button:hover {
+  background-color: #e66000;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+
+/* Second Slide */
+
+
+/* Second Slide Container */
+.second-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px;
+  background: linear-gradient(to right, #fdfdfd, #eef4ff);
+  animation: fadeInSlide 1.5s ease-in-out;
+}
+
+/* Image Style */
+.company-image img {
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  animation: slideInLeft 1s ease-in-out;
+}
+
+/* Text Style */
+.company-text {
+  max-width: 550px;
+  animation: slideInRight 1s ease-in-out;
+}
+
+.slide-heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2a2a2a;
+  margin-bottom: 20px;
+}
+
+.slide-para {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.company-highlights {
+  list-style: none;
+  padding-left: 0;
+}
+
+.company-highlights li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #1b5e20;
+}
+
+/* Animations */
+@keyframes fadeInSlide {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+
+
+/* third slide  */
+
+
+/* Animate.css लिंक head मध्ये आधीच टाकलेलं पाहिजे */
+
+/* Client कार्ड डिझाईन */
+.client-card {
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px; /* कार्डची उंची तू आवश्यकतेनुसार वाढव/कमी कर */
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.client-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Client logo image styling */
+.client-card img {
+ max-height: 90%;     /* फोटो कार्डमध्ये मावेल इतका मोठा कर */
+  max-width: 90%;
+  object-fit: contain;
+}
+
+.client-card:hover img {
+  transform: scale(1.1); /* माउस नेला तर फोटो थोडा झूम होईल */
+  transition: transform 0.3s ease;
 }
 
 
 
 
+/* Hero Section Styling */
+section.bg-light {
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  padding: 5rem 0;
+}
 
+/* Container Centering */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
+/* Heading Animation */
+h1.animate__fadeInTop {
+  animation: fadeSlideTop 1s ease-out;
+}
 
+/* Paragraph Animation */
+p.animate__fadeInUp {
+  animation: fadeSlideUp 1.2s ease-out;
+}
 
+/* Custom Keyframes */
+@keyframes fadeSlideTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Typography */
+.display-4 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.lead {
+  font-size: 1.25rem;
+  color: #555;
+  margin-top: 1rem;
+}
+
+/* Button Style */
+.btn-primary {
+  background-color: #0d6efd;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(13, 110, 253, 0.4);
+}
+
+/* Responsive Font */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+}
 
 
